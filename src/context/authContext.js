@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import defaultUser from "../assets2/default-user.png";
 
 export const AuthContext = createContext();
 

@@ -1,13 +1,12 @@
 import React from "react";
 import "./navbar.scss";
-import defaultUser from "../../assets2/default-user.png";
 import RoofingIcon from "@mui/icons-material/Roofing";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import GridViewIcon from "@mui/icons-material/GridView";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
-import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
+
 import ZoomOutOutlinedIcon from "@mui/icons-material/ZoomOutOutlined";
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
@@ -39,7 +38,6 @@ const Navbar = () => {
       <div className="right">
         <CircleNotificationsIcon />
         <MailOutlineOutlinedIcon />
-        {/* <Person2OutlinedIcon /> */}
         <div className="user">
           <img src={currentUser.profilePic} alt="random-pic" />
           <span>{currentUser.name}</span>
